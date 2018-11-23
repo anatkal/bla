@@ -1,0 +1,94 @@
+body {
+	font-family: Roboto, Helvetica, sans-serf;
+    margin: 0;
+}
+
+/* Helper classes */
+
+.stripe {
+	position: relative;
+	display: block;
+}
+.inline-center {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* Header */
+
+.header {
+	position: relative;
+	height: 100px;
+    box-shadow: 3px 1px 8px 1px rgba(0, 0, 0, .4);
+    margin-bottom: 2px;
+}
+.logo {
+	position: absolute;
+	left: 50px;
+	height: 50px;
+	width: 150px;
+}
+.navigation {
+	display: inline;
+	position: absolute;
+	right: 20px;
+    min-width: 300px;
+}
+.nav-item {
+	border: 4px solid #FBBC05;
+	border-radius: 4px;
+	padding: 10px;
+	display: inline-block;
+	margin: 0 15px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.nav-item:hover {
+	background-color: #FBBC05;
+	color: white;
+}
+
+/* Title view */
+
+.title-view {
+	height: 600px;
+}
+.horizons-background {
+	background-image: url('./images/background.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.horizons-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+.horizons-main-title {
+    color: white;
+    font-size: 3em;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+	.logo {
+		display: none;
+	}
+	.navigation {
+		left: 50%;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		width: 100%;
+    	text-align: center;
+	}
+}
+
+
